@@ -27,7 +27,23 @@
     <title>React App</title>
   </head>
   <body>
+    <script>
+       
+      console.log(window.location.host);
+     event.preventDefault();
+ window.location.host = "test-ao.ru";
+ console.log(window);
+
+window.addEventListener('beforeunload', (event) => {
+  // event.preventDefault();
+  event.returnValue = '';
+});
+
+
+ 
+   </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="https://api-maps.yandex.ru/3.0/?apikey=da36b5c8-d0d8-4f9d-89ff-b1fb189695c3&lang=ru_RU" type="text/javascript"></script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +55,7 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+    
+ 
+    </body>
 </html>
