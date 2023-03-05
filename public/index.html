@@ -27,8 +27,16 @@
     <title>React App</title>
   </head>
   <body>
+    <!-- // "externalsType": "script",
+
+    // "externals": {
+    //   "ymaps3": [
+    //     "https://api-maps.yandex.ru/3.0/?apikey=da36b5c8-d0d8-4f9d-89ff-b1fb189695c3&lang=ru-RU",
+    //     "ymaps3"
+    //   ]
+    // }, -->
     <script>
-       
+     
       console.log(window.location.host);
      event.preventDefault();
  window.location.host = "test-ao.ru";
@@ -38,13 +46,11 @@ window.addEventListener('beforeunload', (event) => {
   // event.preventDefault();
   event.returnValue = '';
 });
-
-
- 
    </script>
+   
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script src="https://api-maps.yandex.ru/3.0/?apikey=da36b5c8-d0d8-4f9d-89ff-b1fb189695c3&lang=ru_RU" type="text/javascript"></script>
-    <div id="root"></div>
+     <script src="https://api-maps.yandex.ru/3.0/?apikey=da36b5c8-d0d8-4f9d-89ff-b1fb189695c3&lang=ru_RU" type="text/javascript"></script>
+   <div id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

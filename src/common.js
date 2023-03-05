@@ -1,4 +1,4 @@
-const LOCATION = { center: [37.623082, 55.75254], zoom: 9 };
+const LOCATION = { center: [43.423636695937006, 39.93919932549921], zoom: 9 };
 
 const LEFT_MARKER = [...LOCATION.center];
 LEFT_MARKER[0] -= 0.3;
